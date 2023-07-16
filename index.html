@@ -8,14 +8,17 @@
     <title>Sticky Notes</title>
 </head>
 <body>
+    <div class="heading">
+        sticky notes 
+    </div>
     <div class="container">
         <div class="notes">
             <div id="create">
                 <i class="fa-solid fa-circle-plus fa-beat-fade"></i>
                 <div class="createBox">
-                <div class="innerCreateBox">
+                 <div class="innerCreateBox">
                     <textarea placeholder="Type Here. . ." id="userInput" maxlength="160"></textarea> 
-                </div>
+                 </div>
                 </div>
             </div>
         </div>
@@ -29,7 +32,7 @@
         let input = document.getElementById('userInput');
         let i = 0;
 
-        createBox.addEventListener('keydown',content);
+        createBox.addEventListener('keydown', content);
 
         document.getElementById("create").addEventListener("click",
         function(){
@@ -45,21 +48,19 @@
         }
 
         function color(){
-            let randomColors = ["#ff8181", "#9b9fab", "#92b9dd", "#ffdbe2", "#779ba1"];
+            let randomColors = ["#ffb9f2", "#ad91ff", "#9193ff", "#91ffd6", "#9dfffa", "#A8FFD5"];
             if(i > randomColors.length - 1){
                 i * 0
             }
             return randomColors[i++];
         }
-
-
         function divStyle(text){
             let div = document.createElement("div");
             div.className = 'note';
-            div.innerHTML = '<div class="details">'+'<h3>'+text+'</h3>'+'</div>';
+            div.innerHTML = '<div class="details">'+'<h3>'+text+'<h3>'+'</div>';
 
             //remove note on double click
-            div.addEventListener("dbclick", function(){
+            div.addEventListener("dblclick", function(){
                 div.remove();
             })
 
@@ -68,8 +69,6 @@
           
             notes.appendChild(div);
         }
-
-
     </script>
 </body>
 </html>
