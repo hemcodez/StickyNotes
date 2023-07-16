@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
 
  * {
@@ -49,4 +50,57 @@
     height: var(--size);
     background: rgba(255,255,255,0.15);
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+ :root {
+    --size: 300px;
+
+ }
+
+ body {
+    background: #2f3632;
+
+ }
+
+ .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px; 
+    padding: 50px;
+
+
+ }
+ .container .notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+ }
+ 
+ .container .notes .note {
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: #f7e98d;
+ }
+#create {
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: rgba(255,255,255,0.15);
+
+>>>>>>> 65a60112604d9ba625ed168120461728aa08cba1
 }
